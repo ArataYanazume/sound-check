@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# システムの動作確認
+echo "Sound Check を起動しました。"
+
+# python の動作確認
+helloworld.py
