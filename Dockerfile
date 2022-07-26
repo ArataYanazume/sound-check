@@ -13,12 +13,12 @@ ENV TERM xterm
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 
-COPY ./bin/helloworld.py /usr/local/bin
+COPY ./script/helloworld.py /usr/local/bin
 RUN chmod +x /usr/local/bin/helloworld.py
 
 COPY ./bin/setup /usr/local/bin
 RUN chmod +x /usr/local/bin/setup
 
-CMD [ "setup" ]
+# CMD [ "setup" ]
 
 
