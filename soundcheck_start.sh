@@ -11,6 +11,9 @@ docker image build \
 # docker コンテナの起動
 docker container run \
     --name ${container_name} \
+    -v ~/.config/pulse:/root/.config/pulse \
+    --mount type=bind,src=$(cd $(dirname $0) && pwd)/app,dst=/app \
     --rm \
     -it \
+    -p 50061:50061 \
     ${image_name}:${image_version}
