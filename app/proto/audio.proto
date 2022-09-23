@@ -1,0 +1,13 @@
+syntax = "proto3";
+package soundcheck;
+option cc_enable_arenas = true;
+
+service SimpleAudio {
+  rpc Recognize(RecognizeRequest) returns (RecognizeResponse) {}
+}
+message RecognizeRequest {
+  bytes audio = 1;
+}
+message RecognizeResponse {
+  string result = 1;
+}

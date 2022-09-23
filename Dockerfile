@@ -10,7 +10,7 @@ RUN apt-get -y install locales && \
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 
-RUN python -m pip install pyaudio
+RUN python -m pip install pyaudio pydub grpcio grpcio-tools
 
 COPY ./bin/player /usr/local/bin
 RUN chmod +x /usr/local/bin/player
