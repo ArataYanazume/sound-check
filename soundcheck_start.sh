@@ -15,5 +15,5 @@ docker container run \
     --mount type=bind,src=$(cd $(dirname $0) && pwd)/app,dst=/app \
     --rm \
     -it \
-    -p 50061:50061 \
+    -p 20062:20062 \
     ${image_name}:${image_version}
