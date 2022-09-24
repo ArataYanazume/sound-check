@@ -16,9 +16,10 @@ def run(fname, ports):
     print("Result: " + response.result)
 
 if __name__ == '__main__':
+    logging.basicConfig()
+
     args = sys.argv
     fname = args[1]
     ports = args[2]
 
-    logging.basicConfig()
     run(fname, ports)
