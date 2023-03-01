@@ -1,2 +1,2 @@
 #!/bin/sh
-python app/test/player_test.py
+python app/player_test.py
