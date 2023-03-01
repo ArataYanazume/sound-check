@@ -1,2 +1,2 @@
 #!/bin/sh
-python app/test/recorder_test.py
+python app/recorder_test.py

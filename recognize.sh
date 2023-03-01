@@ -1,2 +1,2 @@
 #!/bin/sh
-python app/grpc_client.py 'app/test/output.wav' 'localhost:20062'
+python app/grpc_client.py 'app/data/output.wav' 'app/data/converted.wav' 'localhost:20062'

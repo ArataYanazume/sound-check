@@ -44,7 +44,7 @@ def add_SimpleAudioServicer_to_server(servicer, server):
     server.add_generic_rpc_handlers((generic_handler,))
 
 
- # This class is part of an EXPERIMENTAL API.
+# This class is part of an EXPERIMENTAL API.
 class SimpleAudio(object):
     """Missing associated documentation comment in .proto file."""
 

@@ -3,9 +3,10 @@
 import pyaudio
 import wave
 
+# 音声再生
 def play(
     chunk = 2**10,
-    output_file = "./output.wav"
+    output_file = './output.wav'
     ):
 
     wf = wave.open(output_file, 'rb')
